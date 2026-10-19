@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f9e4e9">
+<title>Elicia & Hannah | A Little Pink Safari</title>
+<style>
+:root{--pink:#f4cbd5;--rose:#b66f80;--cream:#fffaf5;--brown:#705448;--sage:#a8b39a;--blush:#fdeef1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--brown);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:48px 20px;background:radial-gradient(circle at 15% 15%,#fff 0 6%,transparent 7%),linear-gradient(145deg,#fff7f6,#f7dce3 55%,#f9eee2);position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #d8a9b2;border-radius:50%;width:280px;height:280px;opacity:.45}
+.hero:before{top:-150px;left:-90px}.hero:after{bottom:-180px;right:-70px;width:360px;height:360px}
+.card{max-width:760px;position:relative;z-index:1;background:rgba(255,250,245,.84);border:1px solid #e6bdc7;border-radius:28px;padding:clamp(28px,6vw,64px) clamp(20px,6vw,60px);box-shadow:0 18px 50px #946c6818}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font:12px Arial,sans-serif;color:var(--rose)}
+h1{font-size:clamp(42px,8vw,76px);line-height:1.04;margin:18px 0;color:#9f5f70;font-weight:normal}
+h2{font-size:clamp(28px,5vw,40px);font-weight:normal;color:#9f5f70;margin:0 0 16px}
+.names{font-size:clamp(20px,3vw,28px);margin:18px 0}
+.animals{font-size:30px;letter-spacing:8px;margin:20px 0}
+.date{font:600 15px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin:22px 0}
+.btn{display:inline-block;text-decoration:none;background:#b66f80;color:white;border-radius:999px;padding:13px 24px;font:600 14px Arial,sans-serif;letter-spacing:.04em;margin:8px 5px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.secondary{background:#fffaf5;color:#9f5f70;border:1px solid #c98f9d}
+section{padding:70px 20px;text-align:center}.section-inner{max-width:850px;margin:auto}
+.intro{font-size:18px;max-width:650px;margin:0 auto}
+.details{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:28px 0}
+.detail{background:#fff;border:1px solid #efd7dc;border-radius:20px;padding:24px 16px}
+.detail .icon{font-size:27px}.detail h3{font-weight:normal;color:#9f5f70;margin:8px 0 4px}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:28px}
+.portrait{margin:0;background:#fff;border:1px solid #efd7dc;border-radius:22px;padding:12px;overflow:hidden;box-shadow:0 10px 30px #946c6810}
+.portrait img{display:block;width:100%;height:360px;object-fit:cover;object-position:center 40%;border-radius:15px}
+.portrait figcaption{font-size:23px;color:#9f5f70;padding:12px 0 4px}
+.pale{background:#fcecf0}.note{font:13px Arial,sans-serif;color:#8b7770}
+footer{text-align:center;padding:32px 20px;background:#f7dce3;color:#805c60}
+@media(max-width:480px){.hero{min-height:80vh}.card{border-radius:22px}.animals{letter-spacing:4px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="card">
+    <div class="eyebrow">Two little reasons to celebrate</div>
+    <div class="animals" aria-label="Safari animals">🦒 🌸 🐘 🌿 🦁</div>
+    <h1>A Little<br>Pink Safari</h1>
+    <div class="names">Elicia’s Christening<br><span style="font-size:18px;color:#b66f80">&amp;</span><br>Hannah’s 3rd Birthday</div>
+    <div class="date">December 6, 2026 · 9:30 AM</div>
+    <p>Join us for a sweet celebration filled with love, laughter, and little adventures.</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSer1mKy-W1Jvsw-dlg_DM42_uqos8vYC5hR7_8pQerIWuJXrQ/viewform?usp=embed_facebook" target="_blank" rel="noopener">Kindly RSVP</a>
+    <a class="btn secondary" href="#details">Event Details</a>
+  </div>
+</header>
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">With love, we invite you</div>
+    <h2>Our Little Celebrants</h2>
+    <p class="intro">We’d be delighted to have you join our family as we celebrate Elicia’s special christening day and Hannah’s wonderful third birthday. Your presence will make our little safari even more memorable!</p>
+    <div class="photos">
+      <figure class="portrait"><img src="photos/elicia.jpeg" alt="Elicia in her floral christening portrait"><figcaption>Elicia 🌸</figcaption></figure>
+      <figure class="portrait"><img src="photos/hannah.jpeg" alt="Hannah's portrait"><figcaption>Hannah 🦒</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="pale" id="details">
+  <div class="section-inner">
+    <div class="eyebrow">Save the date</div>
+    <h2>Party Details</h2>
+    <div class="details">
+      <div class="detail"><div class="icon">📅</div><h3>When</h3><div>Sunday, December 6, 2026</div><div>9:30 AM</div></div>
+      <div class="detail"><div class="icon">📍</div><h3>Where</h3><div>Ma’am Olives Event Center</div><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Ma%27am+Olives+Event+Center" target="_blank" rel="noopener">Open Google Maps</a><div class="note">Please confirm the exact map pin before sharing.</div></div>
+      <div class="detail"><div class="icon">🌸</div><h3>Theme</h3><div>Soft Pink Safari</div><div>Blush pink · beige · warm brown</div></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="section-inner">
+    <div class="animals">🌷 🦒 🌷</div>
+    <h2>Will You Join Our Safari?</h2>
+    <p class="intro">Please let us know if you can celebrate with us. We can’t wait to make beautiful memories together!</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSer1mKy-W1Jvsw-dlg_DM42_uqos8vYC5hR7_8pQerIWuJXrQ/viewform?usp=embed_facebook" target="_blank" rel="noopener">Confirm Attendance</a>
+  </div>
+</section>
+<footer>
+  <div>Made with love for Elicia &amp; Hannah 💗</div>
+  <div class="note">A little love, a little laughter, and a whole lot of pink safari magic.</div>
+</footer>
+</body>
+</html>
